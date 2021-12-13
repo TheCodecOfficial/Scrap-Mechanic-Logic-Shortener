@@ -25,3 +25,6 @@ hs_err_pid*
 
 # Path shit
 path.txt
+
+# vscode shit
+settings.json
