@@ -12,8 +12,7 @@ import src.Graph.Node;
 
 public class LogicShortener {
     public static void main(String[] args) throws IOException {
-
-        String path = "C:\\Users\\cpmct\\AppData\\Roaming\\Axolot Games\\Scrap Mechanic\\User\\User_76561198200461307\\Blueprints\\d5d2de83-25ae-4d99-81ee-10062b6386c8\\blueprint.json";
+      
         Path p = Paths.get(path);
 
         Stream<String> lines = Files.lines(p);
