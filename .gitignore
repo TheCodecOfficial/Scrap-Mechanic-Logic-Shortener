@@ -25,6 +25,7 @@ hs_err_pid*
 
 # Path shit
 path.txt
+exportpath.txt
 
 # vscode shit
 .vscode/
