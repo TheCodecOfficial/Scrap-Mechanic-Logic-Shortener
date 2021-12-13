@@ -12,7 +12,10 @@ import src.Graph.Node;
 
 public class LogicShortener {
     public static void main(String[] args) throws IOException {
-      
+
+        Scanner scanner = new Scanner(new File("path.txt"));
+        String path = scanner.nextLine();
+
         Path p = Paths.get(path);
 
         Stream<String> lines = Files.lines(p);
@@ -38,6 +41,8 @@ public class LogicShortener {
             Node node = new Node(controller.getInt("id"), (byte) controller.getInt("mode"));
             gates.add(node);
         }
+
+        // Groundbreaking O(n^2 * Δ(G)) algorithm 🤠
         for (int i = 0; i < jsonGates.size(); i++) {
 
             JSONObject controller = (JSONObject) jsonGates.get(i).get("controller");
